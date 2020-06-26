@@ -71,7 +71,7 @@ vertex shader에 texCoord = myUV 를 넣는다.
 [https://git.ajou.ac.kr/hwan/cg_course/-/tree/master/WebGL/texture](https://git.ajou.ac.kr/hwan/cg_course/-/tree/master/WebGL/texture)
 
 # 저작권
-저작권은 원칙적으로 저작자 사후 70년까지 보호되며, 2013년 7월 1일 시행 이전에 보호 기간이 만료된 저작물의 기간은 사후 50년간 존속한다.
+저작권은 원칙적으로 저작자 사후 70년까지 보호되며, 2013년 7월 1일 시행 이전에 보호 기간이 만료된 저작물의 기간은 사후 50년간 존속한다. 
 프로젝트에서 사용한 명화들은 전부 저작자 사후 70년을 넘은 저작권이 만료된 명화들을 사용하였다. 
 
 
