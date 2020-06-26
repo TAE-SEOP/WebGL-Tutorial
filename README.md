@@ -65,7 +65,9 @@ vertex shader에 texCoord = myUV 를 넣는다.
 			
 # Reference
 [https://webglfundamentals.org/webgl/lessons/webgl-3d-textures.html](https://webglfundamentals.org/webgl/lessons/webgl-3d-textures.html)
+
 [https://git.ajou.ac.kr/hwan/webgl-tutorial/-/tree/master/student2019/201520868](https://git.ajou.ac.kr/hwan/webgl-tutorial/-/tree/master/student2019/201520868)
+
 [https://git.ajou.ac.kr/hwan/cg_course/-/tree/master/WebGL/texture](https://git.ajou.ac.kr/hwan/cg_course/-/tree/master/WebGL/texture)
 
 # 저작권
