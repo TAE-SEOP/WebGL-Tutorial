@@ -5,9 +5,12 @@
 webGL에서 정육면체의 한 면마다 다른 명화의 이미지를 넣어본다.
 
 # 2. texture mapping
+texture mappingd이란?
+
 컴퓨터 그래픽에서 가상의 3차원 물체의 표면을 2차원의 그림이나 수식으로 적용하여 실제 물체처럼 느껴지도록 하는 기법이다.
 
 UV-mapping : u와 v를 사용하여 2차원의 그림을 3차원의 모델로 만드는 프로세스이다.
+
 
 # 3. 방법
 6개의 이미지를 정육면체의 한 면마다 적용하기 위해서 6가지의 texture를 각각 reference할 복잡한 shader를 만들고 fragment shader에 vertex당 사용할 texture를 결정하는 방법이 있다.
@@ -16,7 +19,7 @@ UV-mapping : u와 v를 사용하여 2차원의 그림을 3차원의 모델로 �
 
 ![painting](/uploads/dea127c2d8d4ad11b966785ffe5f2e01/painting.png)
 
-이 이미지는 저장될 때 좌에서 우로, 위에서 아래로 저장되어 있기 때문에 실제 작업을 할 때는 
+이미지는 저장될 때 좌에서 우로, 위에서 아래로 저장되어 있기 때문에 실제 작업을 할 때는 
 
 ![painting_reflect](/uploads/047d625d79d1aac385145ec8652917b3/painting_reflect.png)
 
@@ -70,9 +73,10 @@ vertex shader에 texCoord = myUV 를 넣는다.
 
 [https://git.ajou.ac.kr/hwan/cg_course/-/tree/master/WebGL/texture](https://git.ajou.ac.kr/hwan/cg_course/-/tree/master/WebGL/texture)
 
+[https://git.ajou.ac.kr/hwan/webgl-tutorial/-/tree/master/student2019/201421044](https://git.ajou.ac.kr/hwan/webgl-tutorial/-/tree/master/student2019/201421044)
 # 저작권
 저작권은 원칙적으로 저작자 사후 70년까지 보호되며, 2013년 7월 1일 시행 이전에 보호 기간이 만료된 저작물의 기간은 사후 50년간 존속한다. 
 
-프로젝트에서 사용한 명화들은 전부 저작자 사후 70년을 넘은 저작권이 만료된 명화들을 사용하였다. 
+프로젝트에서 사용한 명화들은 전부 저작자 사후 70년을 넘은 저작권이 만료된 명화들이다. 
 
 
