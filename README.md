@@ -38,7 +38,7 @@ UV-mapping : u와 v를 사용하여 2차원의 그림을 3차원의 모델로 �
 
 # 4. 코드
 
-texture를 생성하고 이미지를 teximage2D에 넣는다. 
+texture를 생성하고 이미지를 넣는다.
 
     var texture = gl.createTexture();
 	gl.bindTexture(gl.TEXTURE_2D, texture);
