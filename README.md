@@ -33,6 +33,8 @@ UV-mapping : u와 v를 사용하여 2차원의 그림을 3차원의 모델로 �
 
 ![cube1](/uploads/dab3f0276736be3f5a8ea3e4bd5e5543/cube1.PNG)  ![cube2](/uploads/72fab0216b7589bad520e3c9f9848196/cube2.PNG)
 
+큐브를 마우스로 클릭하고 돌리면 큐브가 돌아가서 다른 면들을 볼 수 있다.
+
 
 # 4. 코드
 
@@ -87,7 +89,44 @@ vertex shader에 texCoord = myUV 를 넣는다.
                 color = myColor; \
                 texCoord = myUV; \
 			}';
-			
+전역 변수로 지정하여 움직임을 컨트롤할 수 있게 한다.	
+
+    var drag = false;
+    var old_x, old_y;
+    var dX = 0, dY = 0;
+
+마우스로 인해 발생하는 이벤트를 처리하는 함수이다. 
+canvas에서 마우스가 움직이는 것을 dX,dY로 계산하여 rotX,rotY에 더해주어 큐브가 이벤트에 맞게 움직이도록 한다. 
+    var mouseDown = function(e) {
+       drag = true;
+       old_x = e.pageX, old_y = e.pageY;
+       e.preventDefault();
+       return false;
+    };
+
+    var mouseUp = function(e){
+       drag = false;
+    };
+
+    var mouseMove = function(e) {
+       if (!drag) return false;
+            dX = (e.pageX-old_x)*2*Math.PI/canvas.width;
+            dY = (e.pageY-old_y)*2*Math.PI/canvas.height;
+            rotX+= dX;
+            rotY+= dY;
+            old_x = e.pageX, old_y = e.pageY;
+            e.preventDefault();
+       
+    };
+    
+계속돌아가는 것을 방지하기 위해 drag가 아닌 상태와 큐브가 움직이고 있다면 rotX,rotY를 1.1로 나누어 속도가 줄어들게 한다. 
+    
+    if (!drag && (rotX != 0.0 || rotY !=0.0)) {
+    rotX = rotX/1.1;
+    rotY = rotY/1.1;
+    }
+ 
+
 			
 # Reference
 [https://webglfundamentals.org/webgl/lessons/webgl-3d-textures.html](https://webglfundamentals.org/webgl/lessons/webgl-3d-textures.html)
