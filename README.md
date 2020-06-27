@@ -97,6 +97,9 @@ vertex shader에 texCoord = myUV 를 넣는다.
 [https://git.ajou.ac.kr/hwan/cg_course/-/tree/master/WebGL/texture](https://git.ajou.ac.kr/hwan/cg_course/-/tree/master/WebGL/texture)
 
 [https://git.ajou.ac.kr/hwan/webgl-tutorial/-/tree/master/student2019/201421044](https://git.ajou.ac.kr/hwan/webgl-tutorial/-/tree/master/student2019/201421044)
+
+[https://www.tutorialspoint.com/webgl/webgl_interactive_cube.htm](https://www.tutorialspoint.com/webgl/webgl_interactive_cube.htm)
+
 # 저작권
 저작권은 원칙적으로 저작자 사후 70년까지 보호되며, 2013년 7월 1일 시행 이전에 보호 기간이 만료된 저작물의 기간은 사후 50년간 존속한다. 
 
