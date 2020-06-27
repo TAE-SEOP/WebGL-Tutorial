@@ -36,6 +36,18 @@ UV-mapping : u와 v를 사용하여 2차원의 그림을 3차원의 모델로 �
 
 # 4. 코드
 
+
+     var texture = gl.createTexture();
+	gl.bindTexture(gl.TEXTURE_2D, texture);
+    var image = new Image();
+    image.src = "넣을 이미지";
+    image.addEventListener('load', function() {
+		// Now that the image has loaded make copy it to the texture.
+		gl.bindTexture(gl.TEXTURE_2D, texture);
+		gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA,gl.UNSIGNED_BYTE, image);
+		gl.generateMipmap(gl.TEXTURE_2D);
+        });
+    
 fragment shader에서 정육면체의 입혀질 color를 texture로 바꾸기 위해 gl_FragColor = 0.0 * color + 1.0 * texture2D(sampler2d, texCoord)로 한다. 
 
     var fragmentShaderSource = '\
