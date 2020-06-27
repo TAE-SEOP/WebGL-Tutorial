@@ -37,7 +37,7 @@ UV-mapping : u와 v를 사용하여 2차원의 그림을 3차원의 모델로 �
 # 4. 코드
 
 
-     var texture = gl.createTexture();
+    var texture = gl.createTexture();
 	gl.bindTexture(gl.TEXTURE_2D, texture);
     var image = new Image();
     image.src = "넣을 이미지";
@@ -47,6 +47,17 @@ UV-mapping : u와 v를 사용하여 2차원의 그림을 3차원의 모델로 �
 		gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA,gl.UNSIGNED_BYTE, image);
 		gl.generateMipmap(gl.TEXTURE_2D);
         });
+        
+정육면체를 구성하는 vertex중에서 모나리자를 그릴 면을 예시로 보면 texture coordinates에서 모나리자는 x축 0.0~ 1/3, y축 0.0 ~ 1/2에 위치해 있다. 따라서 그리는 삼각형에 맞춰
+해당 uv값을 결정하면 된다. 
+
+         //모나리자 , sx, sy, sz = 1  , au1=0.0, au2=1/3, av1=0.0, av2=1/2 
+        -sx/2, -sy/2, sz/2, 0.1, 0.9, 1.0, 1.0,    au1, av1,
+        -sx/2,  sy/2, sz/2, 1.0, 0.1, 1.0, 1.0,    au2, av1,
+         sx/2,  sy/2, sz/2,  1.0, 1.0, 0.1, 1.0,   au2, av2, 
+         -sx/2, -sy/2, sz/2, 0.2, 0.8, 1.0, 1.0,   au1, av1, 
+         sx/2, -sy/2, sz/2, 1.0, 0.2, 0.0, 1.0,    au1, av2,
+         sx/2,  sy/2, sz/2,  1.0, 1.0, 0.2, 1.0,   au2, av2, 
     
 fragment shader에서 정육면체의 입혀질 color를 texture로 바꾸기 위해 gl_FragColor = 0.0 * color + 1.0 * texture2D(sampler2d, texCoord)로 한다. 
 
