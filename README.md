@@ -90,6 +90,7 @@ vertex shader에 texCoord = myUV 를 넣는다.
                 color = myColor; \
                 texCoord = myUV; \
 			}';
+			
 전역 변수로 지정하여 움직임을 컨트롤할 수 있게 한다.	
 
     var drag = false;
@@ -98,6 +99,7 @@ vertex shader에 texCoord = myUV 를 넣는다.
 
 마우스로 인해 발생하는 이벤트를 처리하는 함수이다. 
 canvas에서 마우스가 움직이는 것을 dX,dY로 계산하여 rotX,rotY에 더해주어 큐브가 이벤트에 맞게 움직이도록 한다. 
+
     var mouseDown = function(e) {
        drag = true;
        old_x = e.pageX, old_y = e.pageY;
