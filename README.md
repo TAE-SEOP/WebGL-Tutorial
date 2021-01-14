@@ -21,18 +21,17 @@ UV-mapping : u와 v를 사용하여 2차원의 그림을 3차원의 모델로 �
 
 이미지는 저장될 때 좌에서 우로, 위에서 아래로 저장되기 때문에 실제 작업을 할 때는 
 
-![painting_reflect](/uploads/047d625d79d1aac385145ec8652917b3/painting_reflect.png)
+![painting_reflect](https://user-images.githubusercontent.com/57307899/104585127-f0d54280-56a6-11eb-883b-7689b6e58803.png)
 
 이런 모양을 하고 있다고 생각해야 한다. 
 이 texture를 texture corrdinates로 보면 아래의 그림처럼 표현된다.
 
-![texturecoord](/uploads/f8c46bd21a9846a2fff46dec0b624dcb/texturecoord.PNG)
+![texturecoord](https://user-images.githubusercontent.com/57307899/104585152-fb8fd780-56a6-11eb-96e7-b6c39520ba6c.PNG)
 
 따라서 각 u,v를 통해 그림을 넣기 위해서는 위의 사항들을 고려햐여 결정해야 한다.  
 위의 사항들을 고려하여 정육면체의 각 면에 각각의 명화를 texture mapping한다.
 
-![cube1](/uploads/dab3f0276736be3f5a8ea3e4bd5e5543/cube1.PNG)  ![cube2](/uploads/72fab0216b7589bad520e3c9f9848196/cube2.PNG)
-
+![cube1](https://user-images.githubusercontent.com/57307899/104585187-08143000-56a7-11eb-9ef6-b1f9dbc5bf59.PNG)  ![cube1](https://user-images.githubusercontent.com/57307899/104585187-08143000-56a7-11eb-9ef6-b1f9dbc5bf59.PNG)
 큐브를 마우스로 클릭하고 돌리면 큐브가 돌아가서 다른 면들을 볼 수 있다.
 
 
