@@ -17,7 +17,7 @@ UV-mapping : u와 v를 사용하여 2차원의 그림을 3차원의 모델로 �
 하지만 이 방법은 굉장히 복잡한 방식이 될 것이다. 조금 더 간단한 방법이 있다.
 6개의 이미지를 하나의 texture에 넣는 방식이다. 6개의 명화를 하나의 texture에 넣으면 이런 그림이 된다.
 
-![painting](/uploads/dea127c2d8d4ad11b966785ffe5f2e01/painting.png)
+![painting](https://user-images.githubusercontent.com/57307899/104584991-bf5c7700-56a6-11eb-8923-e5876b640807.png)
 
 이미지는 저장될 때 좌에서 우로, 위에서 아래로 저장되기 때문에 실제 작업을 할 때는 
 
