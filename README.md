@@ -31,7 +31,10 @@ UV-mapping : u와 v를 사용하여 2차원의 그림을 3차원의 모델로 �
 따라서 각 u,v를 통해 그림을 넣기 위해서는 위의 사항들을 고려햐여 결정해야 한다.  
 위의 사항들을 고려하여 정육면체의 각 면에 각각의 명화를 texture mapping한다.
 
-![cube1](https://user-images.githubusercontent.com/57307899/104585187-08143000-56a7-11eb-9ef6-b1f9dbc5bf59.PNG)  ![cube1](https://user-images.githubusercontent.com/57307899/104585187-08143000-56a7-11eb-9ef6-b1f9dbc5bf59.PNG)
+![cube1](https://user-images.githubusercontent.com/57307899/104585187-08143000-56a7-11eb-9ef6-b1f9dbc5bf59.PNG)  ![cube2](https://user-images.githubusercontent.com/57307899/106561394-f0c0b800-656b-11eb-907b-e56c4c79befc.PNG)
+
+
+
 큐브를 마우스로 클릭하고 돌리면 큐브가 돌아가서 다른 면들을 볼 수 있다.
 
 
